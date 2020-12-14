@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gloria+Hallelujah&family=Righteous&display=swap');
+    </style>
+    <style type="text/css">
+        body{
+          background-color: palevioletred;
+        }
+        .container{
+          background-color: white;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          border-radius: 20px;
+          padding: 20px 50px;            
+        }
+        .navbar-brand{
+          border-radius: 17px;
+          padding: 8px 20px;
+          border-style: solid;
+          border-color: palevioletred;
+          font-family: 'Gloria Hallelujah', cursive;
+          font-weight: bolder;
+        }
+        #cartIcon{
+          width: 37px;
+          height: 37px;
+        }
+        #users{
+          border-radius: 17px;
+          padding: 8px 12px;
+          border-style: solid;
+          border-color: palevioletred;
+          text-decoration: none;
+          color: black;
+        }
+        #blockUsername{
+          background-color: orange;
+          border-radius: 8px 17px 17px 8px;
+          padding: 2px 15px;
+          font-family: 'Righteous', cursive;
+        }
+        #blockCartIcon{
+          border-bottom-style: solid;
+          border-color: palevioletred;
+          margin-right: 15px;
+          padding: 2px;
+        }
+        #blockCarousel{
+          margin: 10px 12px;
+        }
+        #blockSearch{
+          padding: 2px 0px;
+          border-style: solid;
+          border-color: palevioletred;
+          border-radius: 17px;
+          margin: 10px 12px;
+        }
+        #searchIcon{
+          width: 25px;
+          height: 25px;
+          margin-bottom: 3px;
+        }
+        #formSearch{
+          margin-left: 5px;
+          border-style: none;
+        }
+        #search{
+          border-style: none;
+          width:95%;
+          margin-top: 4px;
+          margin-left: 2px;
+        }
+        #btnSearch{
+          border-style: none;
+          background-color: white;
+          border-right-style: solid;
+          border-color: palevioletred;
+          padding-bottom: 2px;
+          padding-top: 5px;
+        }
+        #btnSearch:focus{
+          outline: none;
+        }
+        #search:focus{
+          outline: none;
+        }
+        #blockContent{
+          padding: 2px 8px;
+          margin: 0px 8px;
+          font-family: 'Fjalla One', sans-serif;
+        }
+        .col-md-3{
+          border-style: solid;
+          border-color: palevioletred;
+          border-radius: 17px;
+          margin-right: 9px;
+          margin-left: 9px;
+          text-decoration: none;
+          width: 275px;
+          margin-bottom: 8px;
+          padding: 20px 5px;
+        }
+        #product{
+          color: black;
+          text-align: center;
+        }
+        #imgProduct{
+          width: 180px;
+          margin: auto;
+          display: block;
+        }
+    </style>
+    <title>Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    Shopping.Kuy
+                </a>
+                <nav class="nav">
+                    <a class="nav-link" aria-current="page" href="#" id="blockCartIcon">
+                        <img src="Cart Icons.png" alt="" id="cartIcon"> 
+                    </a>
+                    <a class="nav-link" href="#" id="users">
+                        <div class="d-inline"><img src="Ava.png" alt="" width="26px"></div>
+                        <div class="d-inline" id="blockUsername">Mimin</div>
+                    </a>
+                </nav>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <div id="blockCarousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Iklan 1.png" class="d-block w-100" alt="..." style="border-radius: 17px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Iklan 2.jpg" class="d-block w-100" alt="..." style="border-radius: 17px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Iklan 3.png" class="d-block w-100" alt="..." style="border-radius: 17px;">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div id="blockSearch">
+            <form action="" class="d-inline" id="formSearch">
+              <button type="submit" id="btnSearch"><img src="Search Icon.png" alt="" class="" id="searchIcon"></button>
+              <input type="text" placeholder="Masukkan Kata Kunci Pencarian" id="search">
+            </form>
+        </div>
+
+        <!-- Content -->
+        <div id="blockContent">
+          <div class="row mx-2" style="margin-bottom: 5px;">
+            <a class="col-md-3" href="">
+              <img src="GS65.png" alt="" id="imgProduct">
+              <div id="product">
+                <div>MSI GS65 Stealth Thin 8RE</div>
+                <div style="border-style: solid; border-color: palevioletred; margin: 0px 88px; border-left-style: none; border-right-style: none; border-bottom-style: none;"></div>
+                <div style="margin-bottom: 4px;">Rp.24.999.999</div>
+              </div>
+            </a>
+            <a class="col-md-3" href="Detail Product.html">
+              <img src="G531GD.png" alt="" id="imgProduct">
+              <div id="product">
+                <div>Asus ROG Strix G531GT</div>
+                <div style="border-style: solid; border-color: palevioletred; margin: 0px 88px; border-left-style: none; border-right-style: none; border-bottom-style: none;"></div>
+                <div style="margin-bottom: 4px;">Rp.17.999.999</div>
+              </div>
+            </a>
+            <a class="col-md-3" href="">
+              <img src="Triton 300.png" alt="" id="imgProduct">
+              <div id="product">
+                <div>Acer Predator Triton 300</div>
+                <div style="border-style: solid; border-color: palevioletred; margin: 0px 88px; border-left-style: none; border-right-style: none; border-bottom-style: none;"></div>
+                <div style="margin-bottom: 4px;">Rp.18.109.200</div>
+              </div>
+            </a>
+            <a class="col-md-3" href="">
+              <img src="Y530.png" alt="" id="imgProduct">
+              <div id="product">
+                <div>Lenovo Legion Y530</div>
+                <div style="border-style: solid; border-color: palevioletred; margin: 0px 88px; border-left-style: none; border-right-style: none; border-bottom-style: none;"></div>
+                <div style="margin-bottom: 4px;">Rp.10.999.999</div>
+              </div>
+            </a>
+          </div>
+          <div class="row mx-2">
+            <a href="" class="col-md-3">
+              <img src="Alienware.png" alt="" id="imgProduct">
+              <div id="product">
+                <div>Dell Alienware M15 R3 2020</div>
+                <div style="border-style: solid; border-color: palevioletred; margin: 0px 88px; border-left-style: none; border-right-style: none; border-bottom-style: none;"></div>
+                <div style="margin-bottom: 4px;">Rp.32.999.999</div>
+              </div>
+            </a>
+          </div> 
+        </div>
+
+        
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

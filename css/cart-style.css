@@ -1,0 +1,72 @@
+body{
+    background-color: palevioletred;
+}
+
+.container--white{
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 20px 50px;            
+}
+
+/* NAVBAR START */
+.navbar-brand{
+    border-radius: 17px;
+    padding: 8px 20px;
+    border-style: solid;
+    border-color: palevioletred;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bolder;
+}
+
+#cartIcon{
+    width: 37px;
+    height: 37px;
+}
+
+#users{
+    border-radius: 17px;
+    padding: 8px 12px;
+    border-style: solid;
+    border-color: palevioletred;
+    text-decoration: none;
+    color: black;
+}
+
+#blockUsername{
+    background-color: orange;
+    border-radius: 8px 17px 17px 8px;
+    padding: 2px 15px;
+    font-family: 'Righteous', cursive;
+}
+
+#blockCartIcon{
+    border-bottom-style: solid;
+    border-color: palevioletred;
+    margin-right: 15px;
+    padding: 2px;
+  }
+
+/* NAVBAR END */
+
+.row-border-pink {
+    border-radius: 17px;
+    
+    border-style: solid;
+    border-color: palevioletred;
+}
+
+.item {
+
+}
+
+.item__icon {
+    height: 180px;
+}
+
+.item__list-details {
+    list-style: none;
+    font-size: 20px;
+    line-height: 35px;
+}
